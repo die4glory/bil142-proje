@@ -7,11 +7,6 @@
 #include <cstdlib>
 #include <iostream>
 
-//çözülecek sorunlar:
-//destructorlar yapılacak
-//single responsibility bakılabilir
-//declaration ve definitionları ayırcaz
-//gecersiz gemi seciminde secim fonksiyonunu tekrar cağır
 
 class Spaceships {
 public:
@@ -20,36 +15,32 @@ public:
     //UPDATES
     virtual int updateHealthDamage10(int& _health) = 0;
     virtual int updateHealthDamage30(int&  _health)=0;
-    virtual void asteroid()=0;
-    virtual void run()=0;
-    virtual void fight()=0;
 
-    int earnMoney(int& _money);
-    int loseMoney(int& _money) ;
-    int updateFuel(int& _fuel);
+    inline int earnMoney(int& _money);
+    inline int loseMoney(int& _money) ;
+     int updateFuel(int& _fuel);
 
     //EVENTS
-
-
+    virtual void asteroid()=0;
     void abandonedPlanet();
-
     void pirates();
 
     //ACTIONS
 
-
-
+    virtual void run()=0;
+    virtual void fight()=0;
     void debate();
 
     //DISPLAY
-    void displayStatus() const ;
+    inline void displayStatus() const ;
 
     //GAME ENDING
-    void gameScore();
+     void gameScore();
 
     int fuel{100};
 
 protected:
+
     //ATTRIBUTIONS
     int money{0};
     int health{100};
