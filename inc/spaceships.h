@@ -34,8 +34,6 @@ public:
     //GAME ENDING
      void gameScore();
 
-    void wait_for_enter();
-
     int fuel{100};
 
 protected:
