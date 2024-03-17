@@ -64,7 +64,6 @@ void Spaceships::abandonedPlanet() {
         std::cout<<"\nTerk edildiğini sandığın gezegene geldiğinde yanıldığını anladın ve...\n\n";
         pirates();
     }
-   wait_for_enter();
 }
 
 
