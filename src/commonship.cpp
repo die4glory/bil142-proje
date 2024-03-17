@@ -43,7 +43,6 @@ void:: commonShip :: asteroid() {
         updateFuel(fuel);
         displayStatus();
     }
-   wait_for_enter();
 }
 
 void commonShip :: run(){
