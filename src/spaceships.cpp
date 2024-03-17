@@ -3,13 +3,6 @@
 #include <iostream>
 #include "spaceships.h"
 
-
-void Spaceships::wait_for_enter() {
-    std::cout << "Devam etmek için Enter'a bas.\n";
-    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-    std::cin.get();
-}
-
  int Spaceships::loseMoney(int& money) {
     int moneyLoss = (rand() % 3 + 1);
     moneyLoss=moneyLoss*10;
@@ -121,8 +114,6 @@ void Spaceships::pirates() { //3 secenek kac savas pazarlık
                 break;
         }
     }
-    wait_for_enter();
-
 }
 
 void Spaceships::debate() {
