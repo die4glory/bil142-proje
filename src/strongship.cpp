@@ -39,7 +39,6 @@ void strongShip::asteroid() {
     updateFuel(fuel);
     displayStatus();
     }
- wait_for_enter();
 }
 
  void strongShip::run()  {
